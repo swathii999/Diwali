@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:purple;
+        }
+    </style>
+    
+</head>
+<body>
+    <center><h1>Happy Divali</h1></center>
+    <div class="divali-content">
+        <font size="5px">Here's some information about Diwali, a popular Hindu festival that symbolizes the victory of good over evil: 
+Name: The name Diwali comes from the Sanskrit word Deepawali, which means "rows of lights". 
+When it's celebrated: Diwali is celebrated in the Hindu calendar month of Kartika, which is usually between mid-October and mid-November. It's celebrated on a no-moon night, also known as an amavasya. 
+What it celebrates: Diwali commemorates the return of Rama, Sita, and Lakshmana to Ayodhya after Rama's 14-year exile. It also symbolizes the victory of light over darkness, good over evil, and knowledge over ignorance. 
+How it's celebrated: Celebrations include: 
+Lighting diyas (clay lamps) 
+Placing lights on the walls and entrances of houses 
+Worshipping Lakshmi, the goddess of wealth and prosperity 
+Worshipping Lord Ganesha, the god of good luck 
+Visiting, exchanging gifts, wearing new clothes, feasting, and feeding the poor 
+Setting off fireworks 
+Other traditions: 
+On the first day of Diwali, known as Dhanteras, people clean their homes and buy small items of gold. 
+On the fourth day of Diwali, people celebrate Govardhan Puja, which is a tradition to worship Govardhan Parvat (Mountain). 
+On the fifth day of Diwali, known as Bhai Dooj, sisters pray for their brothers to have long and happy lives, and brothers give gifts to their sisters. 
+Other religions: 
+Diwali is also celebrated by Sikhs and Jains. 
+Other countries 
+Diwali is an official holiday in India</font>
+    </div>
+    <marquee>
+    <img src="C:\Users\swath\OneDrive\Desktop\img1.jpeg"alt="">
+    <img src="C:\Users\swath\OneDrive\Desktop\happy-diwali-celebration.gif"alt="">
+    <img src="C:\Users\swath\OneDrive\Desktop\img7.gif"alt="">
+    <img src="C:\Users\swath\OneDrive\Desktop\img.jpeg"alt="">
+    <img src="C:\Users\swath\OneDrive\Desktop\img3.jpeg"alt="">
+    <img src="C:\Users\swath\OneDrive\Desktop\img9.jpeg"alt="">
+    <img src="C:\Users\swath\OneDrive\Desktop\img2.jpeg"alt="">
+    
+
+</marquee>
+
+    
+</body>
+<script>
+    function launchConfetti() {
+    const duration = 7 * 1000; // 10 seconds
+    const end = Date.now() + duration;
+    const colors = ['#ffeb3b', '#8F00FF', '#ff5722', '#4caf50', '#FFFFFF',"#000000"];
+    (function frame() {
+        confetti({
+            particleCount: 6, // Reduced number of particles
+            startVelocity: 80,
+            spread: 450,
+            ticks: 190,
+            origin: { x: 0.5, y: 0.5 }, // Start from top center
+            colors: colors,
+        });
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
+    }());
+}
+window.onload = function() {
+    launchConfetti();
+}
+</script>
+</html>

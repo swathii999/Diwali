@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title{
+            color:palevioletred;  
+        }
+        body{
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        .form-field{
+            margin:20px;
+        }
+        .form-field input,button{
+            padding:10px;
+            width:70%;
+            border-radius:100px;
+        }
+        .form-btn{
+            padding:10px;
+            width:70%;
+            border-radius: 100px;
+        }
+        .parent-container{
+            background-color:white;
+            width:45%;
+            padding:2%;
+            text-align:center;
+            margin:auto;
+            margin-top:2%;
+            border-radius:10px;
+            border-radius:100px;
+        }
+
+    </style>
+</head>
+<body background="C:\Users\swath\OneDrive\Desktop\img3.jpeg">
+    <form  class="parent-container"action="login.html">
+        <h2 class="title">Registration Form</h2>
+        <div class="form-field">
+            <input type="User Name"name="User Name" required placeholder="Enter Name"/>
+        </div>
+        <div class="form-field">
+            <input type="Password"name="Password" required placeholder="Enter Password"/>
+        </div>
+        <div class="form-field">
+            <input type="Confirm Password"name="Confirm Password" required placeholder="Enter Confirm password"/>
+        </div>
+        <div class="form-field">
+            <input type="Mobile Number"name="Mobile Number" required placeholder="Enter Mobile Number"/>
+        </div>
+        <button class="form-btn">Submit</button>
+        <p>Already have an account<a href="login.html">Login</a></p>
+    </form>
+</body>
+</html>
